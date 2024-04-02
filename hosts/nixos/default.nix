@@ -264,6 +264,8 @@ let user = "dustin";
 
     # Crypto wallet support
     ledger.enable = true;
+
+    enableRedistributableFirmware = true;
   };
 
   # Sync state between machines

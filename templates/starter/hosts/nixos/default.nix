@@ -35,6 +35,7 @@ let user = "%USER%";
     hostName = "%HOST%"; # Define your hostname.
     useDHCP = false;
     interfaces."%INTERFACE%".useDHCP = true;
+    wireless.enable = true;
   };
 
   # Turn on flag for proprietary software
@@ -243,6 +244,8 @@ let user = "%USER%";
 
     # Crypto wallet support
     ledger.enable = true;
+
+    enableRedistributableFirmware = true;
   };
 
 
